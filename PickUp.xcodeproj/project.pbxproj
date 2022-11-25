@@ -14,6 +14,15 @@
 		CAA04DEE293013D4005E806A /* learningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA04DED293013D4005E806A /* learningTests.swift */; };
 		CAA04DF8293013D4005E806A /* learningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA04DF7293013D4005E806A /* learningUITests.swift */; };
 		CAA04DFA293013D4005E806A /* learningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA04DF9293013D4005E806A /* learningUITestsLaunchTests.swift */; };
+		CAEE36C329317D7F00FB6799 /* FullSportDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE36C229317D7F00FB6799 /* FullSportDetailModel.swift */; };
+		CAF96BE82930612600A87B30 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BE72930612600A87B30 /* HomeView.swift */; };
+		CAF96BEA29307DB200A87B30 /* SportBadgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BE929307DB200A87B30 /* SportBadgeModel.swift */; };
+		CAF96BEC2930844000A87B30 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BEB2930844000A87B30 /* ContentViewModel.swift */; };
+		CAF96BEE29309A7D00A87B30 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BED29309A7D00A87B30 /* HomeViewModel.swift */; };
+		CAF96BF02930A5CC00A87B30 /* HomeViewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BEF2930A5CC00A87B30 /* HomeViewRepository.swift */; };
+		CAF96BF22930B68F00A87B30 /* SportDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BF12930B68F00A87B30 /* SportDetailView.swift */; };
+		CAF96BF42930B7B900A87B30 /* SportDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BF32930B7B900A87B30 /* SportDetailViewModel.swift */; };
+		CAF96BF62930BCB200A87B30 /* SportDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BF52930BCB200A87B30 /* SportDetailRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,17 +43,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CAA04DD8293013D2005E806A /* learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA04DD8293013D2005E806A /* PickUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA04DDB293013D2005E806A /* learningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningApp.swift; sourceTree = "<group>"; };
 		CAA04DDD293013D2005E806A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CAA04DDF293013D4005E806A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA04DE1293013D4005E806A /* learning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = learning.entitlements; sourceTree = "<group>"; };
 		CAA04DE3293013D4005E806A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CAA04DE9293013D4005E806A /* learningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA04DE9293013D4005E806A /* PickUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA04DED293013D4005E806A /* learningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningTests.swift; sourceTree = "<group>"; };
-		CAA04DF3293013D4005E806A /* learningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA04DF3293013D4005E806A /* PickUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA04DF7293013D4005E806A /* learningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITests.swift; sourceTree = "<group>"; };
 		CAA04DF9293013D4005E806A /* learningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAEE36C229317D7F00FB6799 /* FullSportDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSportDetailModel.swift; sourceTree = "<group>"; };
+		CAF96BE72930612600A87B30 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CAF96BE929307DB200A87B30 /* SportBadgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBadgeModel.swift; sourceTree = "<group>"; };
+		CAF96BEB2930844000A87B30 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CAF96BED29309A7D00A87B30 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CAF96BEF2930A5CC00A87B30 /* HomeViewRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRepository.swift; sourceTree = "<group>"; };
+		CAF96BF12930B68F00A87B30 /* SportDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportDetailView.swift; sourceTree = "<group>"; };
+		CAF96BF32930B7B900A87B30 /* SportDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportDetailViewModel.swift; sourceTree = "<group>"; };
+		CAF96BF52930BCB200A87B30 /* SportDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportDetailRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +103,9 @@
 		CAA04DD9293013D2005E806A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CAA04DD8293013D2005E806A /* learning.app */,
-				CAA04DE9293013D4005E806A /* learningTests.xctest */,
-				CAA04DF3293013D4005E806A /* learningUITests.xctest */,
+				CAA04DD8293013D2005E806A /* PickUp.app */,
+				CAA04DE9293013D4005E806A /* PickUpTests.xctest */,
+				CAA04DF3293013D4005E806A /* PickUpUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,8 +113,9 @@
 		CAA04DDA293013D2005E806A /* learning */ = {
 			isa = PBXGroup;
 			children = (
-				CAA04DDB293013D2005E806A /* learningApp.swift */,
-				CAA04DDD293013D2005E806A /* ContentView.swift */,
+				CAEE36C829317E1300FB6799 /* Repo */,
+				CAEE36C529317DB700FB6799 /* UI */,
+				CAEE36C429317D9600FB6799 /* Models */,
 				CAA04DDF293013D4005E806A /* Assets.xcassets */,
 				CAA04DE1293013D4005E806A /* learning.entitlements */,
 				CAA04DE2293013D4005E806A /* Preview Content */,
@@ -129,12 +148,52 @@
 			path = learningUITests;
 			sourceTree = "<group>";
 		};
+		CAEE36C429317D9600FB6799 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE36C229317D7F00FB6799 /* FullSportDetailModel.swift */,
+				CAF96BE929307DB200A87B30 /* SportBadgeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAEE36C529317DB700FB6799 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE36C729317DF700FB6799 /* ViewModel */,
+				CAA04DDB293013D2005E806A /* learningApp.swift */,
+				CAA04DDD293013D2005E806A /* ContentView.swift */,
+				CAF96BF12930B68F00A87B30 /* SportDetailView.swift */,
+				CAF96BE72930612600A87B30 /* HomeView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CAEE36C729317DF700FB6799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CAF96BED29309A7D00A87B30 /* HomeViewModel.swift */,
+				CAF96BEB2930844000A87B30 /* ContentViewModel.swift */,
+				CAF96BF32930B7B900A87B30 /* SportDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CAEE36C829317E1300FB6799 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				CAF96BEF2930A5CC00A87B30 /* HomeViewRepository.swift */,
+				CAF96BF52930BCB200A87B30 /* SportDetailRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAA04DD7293013D2005E806A /* learning */ = {
+		CAA04DD7293013D2005E806A /* PickUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAA04DFD293013D4005E806A /* Build configuration list for PBXNativeTarget "learning" */;
+			buildConfigurationList = CAA04DFD293013D4005E806A /* Build configuration list for PBXNativeTarget "PickUp" */;
 			buildPhases = (
 				CAA04DD4293013D2005E806A /* Sources */,
 				CAA04DD5293013D2005E806A /* Frameworks */,
@@ -144,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = learning;
+			name = PickUp;
 			productName = learning;
-			productReference = CAA04DD8293013D2005E806A /* learning.app */;
+			productReference = CAA04DD8293013D2005E806A /* PickUp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CAA04DE8293013D4005E806A /* learningTests */ = {
+		CAA04DE8293013D4005E806A /* PickUpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAA04E00293013D4005E806A /* Build configuration list for PBXNativeTarget "learningTests" */;
+			buildConfigurationList = CAA04E00293013D4005E806A /* Build configuration list for PBXNativeTarget "PickUpTests" */;
 			buildPhases = (
 				CAA04DE5293013D4005E806A /* Sources */,
 				CAA04DE6293013D4005E806A /* Frameworks */,
@@ -162,14 +221,14 @@
 			dependencies = (
 				CAA04DEB293013D4005E806A /* PBXTargetDependency */,
 			);
-			name = learningTests;
+			name = PickUpTests;
 			productName = learningTests;
-			productReference = CAA04DE9293013D4005E806A /* learningTests.xctest */;
+			productReference = CAA04DE9293013D4005E806A /* PickUpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CAA04DF2293013D4005E806A /* learningUITests */ = {
+		CAA04DF2293013D4005E806A /* PickUpUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAA04E03293013D4005E806A /* Build configuration list for PBXNativeTarget "learningUITests" */;
+			buildConfigurationList = CAA04E03293013D4005E806A /* Build configuration list for PBXNativeTarget "PickUpUITests" */;
 			buildPhases = (
 				CAA04DEF293013D4005E806A /* Sources */,
 				CAA04DF0293013D4005E806A /* Frameworks */,
@@ -180,9 +239,9 @@
 			dependencies = (
 				CAA04DF5293013D4005E806A /* PBXTargetDependency */,
 			);
-			name = learningUITests;
+			name = PickUpUITests;
 			productName = learningUITests;
-			productReference = CAA04DF3293013D4005E806A /* learningUITests.xctest */;
+			productReference = CAA04DF3293013D4005E806A /* PickUpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +267,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CAA04DD3293013D2005E806A /* Build configuration list for PBXProject "learning" */;
+			buildConfigurationList = CAA04DD3293013D2005E806A /* Build configuration list for PBXProject "PickUp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,9 +280,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CAA04DD7293013D2005E806A /* learning */,
-				CAA04DE8293013D4005E806A /* learningTests */,
-				CAA04DF2293013D4005E806A /* learningUITests */,
+				CAA04DD7293013D2005E806A /* PickUp */,
+				CAA04DE8293013D4005E806A /* PickUpTests */,
+				CAA04DF2293013D4005E806A /* PickUpUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,8 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF96BEA29307DB200A87B30 /* SportBadgeModel.swift in Sources */,
+				CAF96BF02930A5CC00A87B30 /* HomeViewRepository.swift in Sources */,
+				CAF96BEE29309A7D00A87B30 /* HomeViewModel.swift in Sources */,
+				CAF96BF62930BCB200A87B30 /* SportDetailRepository.swift in Sources */,
+				CAF96BE82930612600A87B30 /* HomeView.swift in Sources */,
 				CAA04DDE293013D2005E806A /* ContentView.swift in Sources */,
+				CAEE36C329317D7F00FB6799 /* FullSportDetailModel.swift in Sources */,
 				CAA04DDC293013D2005E806A /* learningApp.swift in Sources */,
+				CAF96BF42930B7B900A87B30 /* SportDetailViewModel.swift in Sources */,
+				CAF96BF22930B68F00A87B30 /* SportDetailView.swift in Sources */,
+				CAF96BEC2930844000A87B30 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +354,12 @@
 /* Begin PBXTargetDependency section */
 		CAA04DEB293013D4005E806A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAA04DD7293013D2005E806A /* learning */;
+			target = CAA04DD7293013D2005E806A /* PickUp */;
 			targetProxy = CAA04DEA293013D4005E806A /* PBXContainerItemProxy */;
 		};
 		CAA04DF5293013D4005E806A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAA04DD7293013D2005E806A /* learning */;
+			target = CAA04DD7293013D2005E806A /* PickUp */;
 			targetProxy = CAA04DF4293013D4005E806A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -496,7 +564,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/learning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/learning";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickUp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PickUp";
 			};
 			name = Debug;
 		};
@@ -518,7 +586,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/learning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/learning";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickUp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PickUp";
 			};
 			name = Release;
 		};
@@ -567,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CAA04DD3293013D2005E806A /* Build configuration list for PBXProject "learning" */ = {
+		CAA04DD3293013D2005E806A /* Build configuration list for PBXProject "PickUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAA04DFB293013D4005E806A /* Debug */,
@@ -576,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAA04DFD293013D4005E806A /* Build configuration list for PBXNativeTarget "learning" */ = {
+		CAA04DFD293013D4005E806A /* Build configuration list for PBXNativeTarget "PickUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAA04DFE293013D4005E806A /* Debug */,
@@ -585,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAA04E00293013D4005E806A /* Build configuration list for PBXNativeTarget "learningTests" */ = {
+		CAA04E00293013D4005E806A /* Build configuration list for PBXNativeTarget "PickUpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAA04E01293013D4005E806A /* Debug */,
@@ -594,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAA04E03293013D4005E806A /* Build configuration list for PBXNativeTarget "learningUITests" */ = {
+		CAA04E03293013D4005E806A /* Build configuration list for PBXNativeTarget "PickUpUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAA04E04293013D4005E806A /* Debug */,
