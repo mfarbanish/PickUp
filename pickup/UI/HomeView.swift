@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    let accountId: String
     @StateObject private var viewModel = ViewModel()
     
     var body: some View {
-        if viewModel.isLoading {
-            ProgressView()
-                .progressViewStyle(CircularProgressViewStyle(tint: .blue))
-        } else {
-            NavigationStack {
-                Grid {
-                    ForEach(viewModel.models ?? []) { model in
-                        GridRow {
-                            SportBageView(model: model)
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [.orange, .blue, .blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
+            if viewModel.isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: .orange))
+            } else {
+                NavigationStack {
+                    Grid {
+                        ForEach(viewModel.models ?? []) { model in
+                            GridRow {
+                                SportBageView(model: model)
+                            }
                         }
                     }
                 }
@@ -29,8 +34,10 @@ struct HomeView: View {
 }
 
 struct HomeView_Previews: PreviewProvider {
+    static let accountId = "accountId"
+    
     static var previews: some View {
-        HomeView()
+        HomeView(accountId: accountId)
     }
 }
 

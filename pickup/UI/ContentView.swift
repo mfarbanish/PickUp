@@ -15,13 +15,13 @@ struct ContentView: View {
     var body: some View {
         NavigationStack { 
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [.blue, .orange]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(gradient: Gradient(colors: [.orange, .blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    Text("Pick-Up")
+                    Text("Align.")
                         .font(
                             .system(
-                                size: 38,
+                                size: 42,
                                 weight: .medium,
                                 design: .rounded
                             )
@@ -61,18 +61,21 @@ struct ContentView: View {
                     }
                     .padding(20)
                     HStack(spacing: 15) {
-                        Text("Sign Up")
-                            .padding(15)
-                            .background(.gray)
-                            .foregroundColor(.white)
-                            .font(
-                                .system(
-                                    size: 22,
-                                    design: .rounded
-                                )
+                        NavigationLink("Sign Up") {
+                            NewAccountView()
+                        }
+                        .padding(15)
+                        .frame(maxWidth: .infinity) 
+                        .background(.blue)
+                        .foregroundColor(.white)
+                        .font(
+                            .system(
+                                size: 22,
+                                design: .rounded
                             )
+                        )
                         NavigationLink("Login") {
-                            HomeView()
+                            HomeView(accountId: viewModel.accountId)
                         }
                         .font(
                             .system(
@@ -81,13 +84,20 @@ struct ContentView: View {
                             )
                         )
                         .padding(15)
+                        .frame(maxWidth: .infinity)
                         .foregroundColor(.white)
                         .background(.orange)
+                    }
+                    .padding([.horizontal, .bottom], 20)
+                    if viewModel.loginFailed {
+                        Text("Cannot sign in with user name and password")
+                            .font(.system(size: 14, design: .rounded))
+                            .foregroundColor(.yellow)
                     }
                     Spacer(minLength: 300)
                     Text("Forgot password")
                         .font(.system(size: 14, design: .rounded))
-                        .foregroundColor(.blue)
+                        .foregroundColor(.white)
                     Spacer()
                 }
             }

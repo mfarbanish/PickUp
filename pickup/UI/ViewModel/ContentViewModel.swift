@@ -13,10 +13,11 @@ extension ContentView {
         // possibly make private (set)
         @Published var username: String = ""
         @Published var password: String = ""
+    
+        @Published private (set) var accountId: String = "" // todo support null
+        @Published private (set) var loginFailed = false
         
-        init() {
-            // get data
-        }
+        private let accountRepo = AccountRepository()
         
         func addUserName(username: String) {
             self.username = username
@@ -26,6 +27,15 @@ extension ContentView {
         func addPassword(password: String) {
             self.password = password
             // todo add verification
+        }
+        
+        func attemptSignIn() {
+            let result = accountRepo.signIn(username: username, password: password)
+            do {
+                accountId = try result.get()
+            } catch {
+                loginFailed = true
+            }
         }
     }
 }

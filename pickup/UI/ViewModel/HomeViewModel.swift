@@ -16,11 +16,12 @@ extension HomeView {
         init() {
             // load data
             DispatchQueue.main.async {
+                
+                // todo: get data for accountId
                 self.models = self.repo.getData()
                 self.isLoading = false
             }
         }
-        
         
     }
 }

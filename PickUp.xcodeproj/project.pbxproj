@@ -15,6 +15,9 @@
 		CAA04DF8293013D4005E806A /* pickupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA04DF7293013D4005E806A /* pickupUITests.swift */; };
 		CAA04DFA293013D4005E806A /* pickupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA04DF9293013D4005E806A /* pickupUITestsLaunchTests.swift */; };
 		CAEE36C329317D7F00FB6799 /* FullSportDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE36C229317D7F00FB6799 /* FullSportDetailModel.swift */; };
+		CAEE36CA29343F7F00FB6799 /* NewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE36C929343F7F00FB6799 /* NewAccountView.swift */; };
+		CAEE36CC293443CB00FB6799 /* NewAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE36CB293443CB00FB6799 /* NewAccountViewModel.swift */; };
+		CAEE36CE2934444500FB6799 /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE36CD2934444500FB6799 /* AccountRepository.swift */; };
 		CAF96BE82930612600A87B30 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BE72930612600A87B30 /* HomeView.swift */; };
 		CAF96BEA29307DB200A87B30 /* SportBadgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BE929307DB200A87B30 /* SportBadgeModel.swift */; };
 		CAF96BEC2930844000A87B30 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF96BEB2930844000A87B30 /* ContentViewModel.swift */; };
@@ -55,6 +58,9 @@
 		CAA04DF7293013D4005E806A /* pickupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickupUITests.swift; sourceTree = "<group>"; };
 		CAA04DF9293013D4005E806A /* pickupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickupUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAEE36C229317D7F00FB6799 /* FullSportDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSportDetailModel.swift; sourceTree = "<group>"; };
+		CAEE36C929343F7F00FB6799 /* NewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountView.swift; sourceTree = "<group>"; };
+		CAEE36CB293443CB00FB6799 /* NewAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewModel.swift; sourceTree = "<group>"; };
+		CAEE36CD2934444500FB6799 /* AccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepository.swift; sourceTree = "<group>"; };
 		CAF96BE72930612600A87B30 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CAF96BE929307DB200A87B30 /* SportBadgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportBadgeModel.swift; sourceTree = "<group>"; };
 		CAF96BEB2930844000A87B30 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 				CAA04DDD293013D2005E806A /* ContentView.swift */,
 				CAF96BF12930B68F00A87B30 /* SportDetailView.swift */,
 				CAF96BE72930612600A87B30 /* HomeView.swift */,
+				CAEE36C929343F7F00FB6799 /* NewAccountView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -175,6 +182,7 @@
 				CAF96BED29309A7D00A87B30 /* HomeViewModel.swift */,
 				CAF96BEB2930844000A87B30 /* ContentViewModel.swift */,
 				CAF96BF32930B7B900A87B30 /* SportDetailViewModel.swift */,
+				CAEE36CB293443CB00FB6799 /* NewAccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 			children = (
 				CAF96BEF2930A5CC00A87B30 /* HomeViewRepository.swift */,
 				CAF96BF52930BCB200A87B30 /* SportDetailRepository.swift */,
+				CAEE36CD2934444500FB6799 /* AccountRepository.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -319,16 +328,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF96BEA29307DB200A87B30 /* SportBadgeModel.swift in Sources */,
+				CAEE36CA29343F7F00FB6799 /* NewAccountView.swift in Sources */,
 				CAF96BF02930A5CC00A87B30 /* HomeViewRepository.swift in Sources */,
 				CAF96BEE29309A7D00A87B30 /* HomeViewModel.swift in Sources */,
 				CAF96BF62930BCB200A87B30 /* SportDetailRepository.swift in Sources */,
 				CAF96BE82930612600A87B30 /* HomeView.swift in Sources */,
 				CAA04DDE293013D2005E806A /* ContentView.swift in Sources */,
+				CAEE36CE2934444500FB6799 /* AccountRepository.swift in Sources */,
 				CAEE36C329317D7F00FB6799 /* FullSportDetailModel.swift in Sources */,
 				CAA04DDC293013D2005E806A /* learningApp.swift in Sources */,
 				CAF96BF42930B7B900A87B30 /* SportDetailViewModel.swift in Sources */,
 				CAF96BF22930B68F00A87B30 /* SportDetailView.swift in Sources */,
 				CAF96BEC2930844000A87B30 /* ContentViewModel.swift in Sources */,
+				CAEE36CC293443CB00FB6799 /* NewAccountViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
