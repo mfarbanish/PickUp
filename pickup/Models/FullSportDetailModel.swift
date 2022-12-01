@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// TODO update model to support home screen information
 struct FullSportInfoModel: Identifiable {
     let id: String
     let name: String

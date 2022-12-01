@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct HomePageView: View {
     let accountId: String
     @StateObject private var viewModel = ViewModel()
     
@@ -37,7 +37,7 @@ struct HomeView_Previews: PreviewProvider {
     static let accountId = "accountId"
     
     static var previews: some View {
-        HomeView(accountId: accountId)
+        HomePageView(accountId: accountId)
     }
 }
 
@@ -48,7 +48,7 @@ struct SportBageView: View {
             VStack {
                 Image(model.imageUrl)
                 NavigationLink(model.name) {
-                    SportDetailView(id: model.id)
+                    EventPlanningView(userId: model.id)
                 }
                 .font(
                     .system(

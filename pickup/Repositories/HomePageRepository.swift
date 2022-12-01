@@ -8,9 +8,9 @@
 import Foundation
 
 
-class SportDetailRepository {
+class HomePageRepository {
     
-    func getData(id: String) -> FullSportInfoModel? {
+    func getData(userId: String) -> FullSportInfoModel? {
         do {
             sleep(1)
         }
@@ -47,6 +47,6 @@ class SportDetailRepository {
                 locations: []
             )
         ]
-    return mapping[id]
+    return mapping[userId]
     }
 }

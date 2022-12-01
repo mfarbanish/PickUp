@@ -16,14 +16,10 @@ extension NewAccountView {
         
         @Published private (set) var usernameInvalid = false
         @Published private (set) var passwordInvalid = false
-        @Published private (set) var canAttemptAccount = false
         
         @Published private (set) var accountId: String = "" // make nullable
-        @Published private (set) var signUpFailed = false // todo remove or figure out
-        
-        init() {
-            canAttemptAccount = !(usernameInvalid || passwordInvalid || inputUserName.isEmpty || inputPassword.isEmpty)
-        }
+        @Published private (set) var signUpFailed = false
+        @Published private (set) var signUpInfoInvalid = false
         
         private let accountRepo = AccountRepository()
         
@@ -43,8 +39,8 @@ extension NewAccountView {
         }
         
         func attemptToCreateAccount() {
-            if (canAttemptAccount) { // fix this
-                let isEMp = inputUserName.isEmpty
+            if (canAttemptAccount()) {
+                signUpInfoInvalid = false
                 let result = accountRepo.addAccount(
                     username: self.inputUserName,
                     password: self.inputPassword
@@ -54,7 +50,14 @@ extension NewAccountView {
                 } catch {
                     signUpFailed = true
                 }
+            } else {
+                signUpInfoInvalid = true
             }
         }
+        
+        func canAttemptAccount() -> Bool {
+            return !(usernameInvalid || passwordInvalid || inputUserName.isEmpty || inputPassword.isEmpty)
+        }
+        
     }
 }

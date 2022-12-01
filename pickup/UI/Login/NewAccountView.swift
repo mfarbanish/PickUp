@@ -65,10 +65,10 @@ struct NewAccountView: View {
                         if viewModel.signUpFailed {
                             ContentView()
                         } else {
-                            HomeView(accountId: viewModel.accountId)
+                            HomePageView(accountId: viewModel.accountId)
                         }
                     }
-                    .disabled(!viewModel.canAttemptAccount)
+                    .disabled(!viewModel.canAttemptAccount())
                     .simultaneousGesture(TapGesture().onEnded {
                         viewModel.attemptToCreateAccount()
                     }
@@ -84,14 +84,13 @@ struct NewAccountView: View {
                         )
                     )
                     if viewModel.usernameInvalid {
-                        Text("username is taken")
-                            .font(.system(size: 14, design: .rounded))
-                            .foregroundColor(.yellow)
+                        FeedbackText(feedback: "username is taken")
                     }
                     if viewModel.passwordInvalid {
-                        Text("Password is too short")
-                            .font(.system(size: 14, design: .rounded))
-                            .foregroundColor(.yellow)
+                        FeedbackText(feedback: "Password must be > 8 characters")
+                    }
+                    if viewModel.signUpInfoInvalid {
+                        FeedbackText(feedback: "Can't create an account with invalid info")
                     }
                 }
                 .padding([.horizontal], 20)

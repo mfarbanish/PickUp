@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SportDetailView: View {
-    let id: String
+struct EventPlanningView: View {
+    let userId: String
     @StateObject private var viewModel = ViewModel()
     
     var body: some View {
@@ -16,7 +16,7 @@ struct SportDetailView: View {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle(tint: .blue))
                 .onAppear() {
-                    viewModel.initializeForId(id: id)
+                    viewModel.initializeForId(userid: userId)
                 }
         } else {
             VStack {
@@ -32,6 +32,6 @@ struct SportDetailView_Previews: PreviewProvider {
     static let id = "soccerId"
 
     static var previews: some View {
-        SportDetailView(id: id)
+        EventPlanningView(userId: id)
     }
 }

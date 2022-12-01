@@ -16,6 +16,7 @@ extension ContentView {
     
         @Published private (set) var accountId: String = "" // todo support null
         @Published private (set) var loginFailed = false
+        @Published private (set) var signUpInfoInvalid = false
         
         private let accountRepo = AccountRepository()
         
@@ -30,12 +31,21 @@ extension ContentView {
         }
         
         func attemptSignIn() {
-            let result = accountRepo.signIn(username: username, password: password)
-            do {
-                accountId = try result.get()
-            } catch {
-                loginFailed = true
+            if (inputsNotEmpty()) {
+                signUpInfoInvalid = false
+                let result = accountRepo.signIn(username: username, password: password)
+                do {
+                    accountId = try result.get()
+                } catch {
+                    loginFailed = true
+                }
+            } else {
+                signUpInfoInvalid = true
             }
+        }
+        
+        func inputsNotEmpty() -> Bool {
+            return !(username.isEmpty || password.isEmpty)
         }
     }
 }

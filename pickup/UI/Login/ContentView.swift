@@ -13,7 +13,7 @@ struct ContentView: View {
     @FocusState private var passwordFieldIsFocused
     
     var body: some View {
-        NavigationStack { 
+        NavigationStack {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [.orange, .blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .edgesIgnoringSafeArea(.all)
@@ -65,7 +65,7 @@ struct ContentView: View {
                             NewAccountView()
                         }
                         .padding(15)
-                        .frame(maxWidth: .infinity) 
+                        .frame(maxWidth: .infinity)
                         .background(.blue)
                         .foregroundColor(.white)
                         .font(
@@ -75,7 +75,7 @@ struct ContentView: View {
                             )
                         )
                         NavigationLink("Login") {
-                            HomeView(accountId: viewModel.accountId)
+                            HomePageView(accountId: viewModel.accountId)
                         }
                         .font(
                             .system(
@@ -87,15 +87,23 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.white)
                         .background(.orange)
+                        .disabled(!viewModel.inputsNotEmpty())
+                        .simultaneousGesture(TapGesture().onEnded {
+                            viewModel.attemptSignIn()
+                        }
+                        )
                     }
                     .padding([.horizontal, .bottom], 20)
                     if viewModel.loginFailed {
-                        Text("Cannot sign in with user name and password")
-                            .font(.system(size: 14, design: .rounded))
-                            .foregroundColor(.yellow)
+                        FeedbackText(
+                            feedback: "Cannot sign in with user name and password"
+                        )
+                    }
+                    if viewModel.signUpInfoInvalid {
+                        FeedbackText(feedback: "Add username and password")
                     }
                     Spacer(minLength: 300)
-                    Text("Forgot password")
+                    Text("Forgot password?")
                         .font(.system(size: 14, design: .rounded))
                         .foregroundColor(.white)
                     Spacer()

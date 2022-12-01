@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension HomeView {
+extension HomePageView {
     @MainActor class ViewModel: ObservableObject {
         @Published private (set) var models: [SportBadgeModel]?
         @Published private (set) var isLoading = true
